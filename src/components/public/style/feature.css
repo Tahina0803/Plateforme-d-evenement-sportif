@@ -1,0 +1,59 @@
+@import url('main.css');
+.icon-style {
+  color: var(--accent-color);
+  margin-right: 15px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.more-features {
+    margin-top: 30px;
+}
+
+.more-features .section-title{
+  padding-bottom: 50px;
+}
+
+.more-features .features-image {
+    position: relative;
+    min-height: 400px;
+  }
+  
+  .more-features .features-image img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .more-features h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .more-features .container h3 {
+    font-size: 20px;
+    color: #6b777c;
+    margin-bottom: 0;
+  }
+  
+  .more-features .icon-box {
+    margin-top: 30px;
+  }
+  
+  .more-features .icon-box h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .more-features .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  

@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  /* Header.css */
+.navbar-nav .nav-link .fa {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link .fa {
+    display: inline;
+  }
+
+  .navbar-nav .nav-link {
+    display: inline;
+  }
+}

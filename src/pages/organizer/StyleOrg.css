@@ -1,0 +1,22 @@
+ :root {
+    --blue-event : #283845,
+    --green-event :#00d084
+ }
+ .orgform {
+    width: 600px;
+    border: 1px solid #f48fb1;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px ;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+@media screen and (min-width: 365px) {
+    .orgform {
+        width: 320px;
+        }
+  }  
+
+ 

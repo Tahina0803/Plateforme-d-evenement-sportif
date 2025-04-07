@@ -1,0 +1,64 @@
+/* Sidebar */  
+.sidebar {  
+  width: 250px;  
+  background-color: transparent; /* Supprime le fond blanc */  
+  transition: all 0.3s ease; /* Ajoute une transition pour le masquage */  
+}  
+
+.sidebar.hide {  
+  transform: translateX(-250px); /* Masque la sidebar en déplaçant à gauche */  
+}  
+
+.sidebar.show {  
+  transform: translateX(0); /* Affiche la sidebar */  
+}  
+
+/* Bouton pour collapse sidebar */  
+.toggle-sidebar {  
+  display: hide; /* Masque le bouton par défaut */  
+  position: absolute;  
+  top: 10px;  
+  left: 10px;  
+  z-index: 10;  
+}  
+
+/* Affiche le bouton sur les petits écrans */  
+@media (max-width: 768px) {  
+  .toggle-sidebar {  
+      display: block; /* Affiche le bouton sur mobile */  
+  }  
+
+  .sidebar {  
+      display: none; /* Cache la sidebar par défaut sur mobile */  
+      position: fixed; /* Rendre la position fixe pour ne pas faire défiler la page */  
+      height: 100vh; /* Hauteur de la sidebar pour qu’elle prenne tout l’écran */  
+      z-index: 999; /* Assure qu'elle reste au-dessus des autres éléments */  
+  }  
+
+  .sidebar.show {  
+      display: block; /* Affiche la sidebar quand elle est active */  
+  }  
+}  
+
+/* Masque le bouton sur les écrans larges */  
+@media (min-width: 769px) {  
+  .toggle-sidebar {  
+      display: none; /* Masque le bouton sur les écrans larges */  
+  }  
+
+  .sidebar {  
+      display: block; /* Affiche la sidebar sur les écrans larges */  
+  }  
+}  
+
+/* Effet de hover */  
+.nav-link {  
+  padding: 10px;  
+  color: #000;  
+  transition: background-color 0.3s ease, color 0.3s ease;  
+}  
+
+.nav-link:hover {  
+  background-color: #6dc9da; /* Couleur de fond lors du survol */  
+  color: #fff; /* Couleur du texte lors du survol */  
+}

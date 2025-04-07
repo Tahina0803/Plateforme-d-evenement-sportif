@@ -1,0 +1,6 @@
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        /* justify-content: flex-start; */
+    }
+}

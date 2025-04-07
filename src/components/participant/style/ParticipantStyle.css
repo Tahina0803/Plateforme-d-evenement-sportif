@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  .sidebar {
+    background-color: #c6d5d6e7;
+    height: 100vh;
+    padding-top: 20px;
+  }
+  
+  .sidebar .nav-link {
+    color: #000;
+  }
+  
+  .sidebar .nav-link.active {
+    background-color: #e9ecef;
+  }
+
+  .Container .sidebar {
+    border: solid black 1;
+    padding-left: 0%;
+  }
+  
+  
